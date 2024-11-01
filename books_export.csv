@@ -1,0 +1,4 @@
+"id","title","author","genre","publicationDate","ISBN"
+1,"Book1 ","Author 1","crime","2024-08-06",
+2,"Test Book 1","Good Author 1","crime","2024-08-05",
+3,"Test Book 2","Good Author 1","crime","2024-10-02",

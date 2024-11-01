@@ -1,0 +1,105 @@
+Book Inventory Management System
+    This project is a Book Inventory Management System built with React for the frontend and Node.js with Express and Sequelize for the backend, using MySQL as the database.
+    
+    by
+    Mohammed Abdul Quawi Mudassir
+
+Table of Contents
+    Prerequisites
+    Installation
+    Running the Project
+    API Endpoints
+
+
+Prerequisites
+    
+    Before you begin, ensure you have met the following requirements:
+
+    Node.js: Install Node.js (version 14 or later) from nodejs.org.
+    MySQL: Install MySQL server from mysql.com.
+    MySQL Workbench (optional): For managing your MySQL databases visually. Download from mysql.com.
+    Installation
+
+Follow these steps to set up the project:
+
+1. Copy the Project
+Copy the Project to your local machine:
+
+
+2. Navigate to the Project Directory
+    Navigate to the project folder:
+
+    cd book-inventory-management
+
+3. Set Up the Backend
+    a. Navigate to the Backend Directory
+
+        cd backend
+
+    b. Install Backend Dependencies
+        Run the following command to install the required packages:
+
+        npm install
+
+    c. Set Up the Database
+        Create a new database in MySQL called book_inventory.
+        Configure your database connection in the db.js file located in the backend directory. Update the username and password as necessary.
+
+    d. Create a .env File
+        In the backend directory, create a .env file and add the following:
+
+        DB_HOST=localhost
+        DB_USER=root
+        DB_PASSWORD=your_password
+        DB_NAME=book_inventory
+        Replace your_password with your actual MySQL password.
+
+    e. Run the Backend Server
+        Start the backend server:
+
+        npm start
+
+4. Set Up the Frontend
+    a. Open a New Terminal Window
+        Navigate back to the project root and then to the frontend directory:
+
+        cd ../frontend
+
+    b. Install Frontend Dependencies
+        Run the following command to install the required packages:
+
+        npm install
+        
+    c. Run the Frontend Server
+        Start the frontend server:
+
+        npm start
+
+5. Access the Application
+    Open your web browser and go to http://localhost:3000 to access the Book Inventory Management System.
+
+    Running the Project
+    Once both the backend and frontend servers are running, you can interact with the application to add, filter, and display books in your inventory.
+
+API Endpoints
+    GET /books/filter
+    Fetch all books or filter books based on query parameters.
+
+    Query Parameters:
+    title: Filter by book title
+    author: Filter by author name
+    genre: Filter by genre
+    publicationDate: Filter by publication date
+    POST /books
+    Add a new book to the inventory.
+
+    Request Body:
+    json
+    Copy code
+    {
+    "title": "string",
+    "author": "string",
+    "genre": "string",
+    "publicationDate": "YYYY-MM-DD",
+    "isbn": "string"
+    }
